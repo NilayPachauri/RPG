@@ -1,11 +1,13 @@
 public class Battle
 {
     int turnCount;
-    Entity x;
-    Entity y;
-    public Battle (Entity a, Entity b)
+    Entity a;
+    Entity b;
+    public Battle (Entity x, Entity y)
     {
         turnCount=1;
+        a=x;
+        b=y;
     }
 
     public Entity advanceBattle()
